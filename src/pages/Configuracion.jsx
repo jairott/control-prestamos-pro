@@ -4,7 +4,7 @@ import { useApp } from '../context/AppContext'
 
 const inputClass = 'border border-gray-200 rounded-xl p-3 w-full text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 bg-white'
 
-const MONEDAS = ['RD$', 'US$', 'EUR €', '$ USD']
+const MONEDAS = ['C$', '$ USD']
 const TIEMPOS = [
   { value: 5, label: '5 minutos' },
   { value: 10, label: '10 minutos' },
