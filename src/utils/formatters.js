@@ -5,7 +5,7 @@
 export function formatMoney(amount, currency = 'RD$') {
   if (amount === null || amount === undefined || isNaN(amount)) return `${currency} 0.00`
   const num = parseFloat(amount)
-  return `${currency} ${num.toLocaleString('es-DO', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
+  'es-DO' → 'es-NI'
 }
 
 const MONTHS_ES = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic']
