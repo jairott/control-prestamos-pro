@@ -5,7 +5,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 const REPO = 'control-prestamos-pro'
 
 export default defineConfig(({ command }) => {
-  const base = command === 'build' ? `/${REPO}/` : '/'
+  const base = '/'
 
   return {
     base,
