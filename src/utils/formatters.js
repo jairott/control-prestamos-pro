@@ -1,7 +1,7 @@
 export function formatMoney(amount, currency = 'C$') {
   if (amount === null || amount === undefined || isNaN(amount)) return `${currency} 0.00`
   const num = parseFloat(amount)
-  return `${currency} ${num.toLocaleString('es-NI', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
+  return `${currency} ${num.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
 }
 
 export function formatPercent(value) {
