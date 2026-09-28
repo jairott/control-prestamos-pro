@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import { LayoutDashboard, Users, CreditCard, DollarSign, Menu } from 'lucide-react'
+import { LayoutDashboard, Users, CreditCard, DollarSign, Menu, Wallet } from 'lucide-react'
 import { useApp } from '../../context/AppContext'
 
 const tabs = [
@@ -7,6 +7,7 @@ const tabs = [
   { to: '/clientes', icon: Users, label: 'Clientes' },
   { to: '/prestamos', icon: CreditCard, label: 'Préstamos' },
   { to: '/pagos', icon: DollarSign, label: 'Pagos' },
+  { to: '/caja', icon: Wallet, label: 'Caja' },
   { to: '/reportes', icon: Menu, label: 'Más' },
 ]
 

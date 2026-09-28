@@ -64,3 +64,26 @@ export function getLoanStatus(prestamo, pagos = []) {
   if (vencimiento < today) return 'vencido'
   return 'activo'
 }
+
+/**
+ * Desglose capital / interés pendiente de un préstamo.
+ * Los abonos se reparten proporcionalmente (promedio) entre capital e interés.
+ */
+export function calcularDesglose(prestamo, pagos) {
+  const capitalTotal = parseFloat(prestamo.monto || 0)
+  const total = calcularTotalAPagar(prestamo.monto, prestamo.interes, prestamo.cuotas, prestamo.tipoInteres)
+  const interesTotal = Math.max(0, total - capitalTotal)
+  const pagado = Math.min(calcularTotalPagado(prestamo.id, pagos), total)
+  const ratio = total > 0 ? capitalTotal / total : 1
+  const capitalPagado = pagado * ratio
+  const interesPagado = pagado - capitalPagado
+  return {
+    capitalTotal,
+    interesTotal,
+    total,
+    pagado,
+    capitalPendiente: Math.max(0, capitalTotal - capitalPagado),
+    interesPendiente: Math.max(0, interesTotal - interesPagado),
+    saldoPendiente: Math.max(0, total - pagado),
+  }
+}

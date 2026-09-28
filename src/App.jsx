@@ -14,6 +14,7 @@ import PagoForm from './pages/pagos/PagoForm'
 import Reportes from './pages/Reportes'
 import Configuracion from './pages/Configuracion'
 import Backup from './pages/Backup'
+import Caja from './pages/Caja'
 
 function AppRoutes() {
   const { state } = useApp()
@@ -35,6 +36,7 @@ function AppRoutes() {
         <Route path="/prestamos/:id" element={<PrestamoDetalle />} />
         <Route path="/pagos" element={<Pagos />} />
         <Route path="/pagos/nuevo" element={<PagoForm />} />
+        <Route path="/caja" element={<Caja />} />
         <Route path="/reportes" element={<Reportes />} />
         <Route path="/configuracion" element={<Configuracion />} />
         <Route path="/backup" element={<Backup />} />

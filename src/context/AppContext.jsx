@@ -1,5 +1,6 @@
 import { createContext, useContext, useReducer, useEffect } from 'react'
 import { getDemoData } from '../utils/demoData'
+import { calcularTotalAPagar } from '../utils/calculations'
 
 const STORAGE_KEY = 'controlprestamos_data'
 
@@ -8,6 +9,8 @@ const initialState = {
   clientes: [],
   prestamos: [],
   pagos: [],
+  // Caja: libro de entradas (abonos) y salidas (préstamos nuevos)
+  caja: { inicio: null, movimientos: [] },
   config: {
     pin: '1234',
     moneda: 'RD$',
@@ -39,8 +42,23 @@ function reducer(state, action) {
         prestamos: state.prestamos.filter((p) => p.clienteId !== action.payload),
         pagos: state.pagos.filter((pg) => pg.clienteId !== action.payload),
       }
-    case 'ADD_PRESTAMO':
-      return { ...state, prestamos: [...state.prestamos, action.payload] }
+    case 'ADD_PRESTAMO': {
+      const p = action.payload
+      const cliente = state.clientes.find((c) => c.id === p.clienteId)
+      return {
+        ...state,
+        prestamos: [...state.prestamos, p],
+        caja: addMovimiento(state.caja, {
+          tipo: 'salida',
+          monto: parseFloat(p.monto || 0),
+          capital: parseFloat(p.monto || 0),
+          interes: 0,
+          concepto: `Préstamo nuevo · ${cliente?.nombre || ''}`,
+          fecha: p.fechaInicio,
+          refId: p.id,
+        }),
+      }
+    }
     case 'UPDATE_PRESTAMO':
       return {
         ...state,
@@ -53,14 +71,54 @@ function reducer(state, action) {
         ...state,
         prestamos: state.prestamos.filter((p) => p.id !== action.payload),
         pagos: state.pagos.filter((pg) => pg.prestamoId !== action.payload),
+        caja: removeMovimientos(state.caja, [
+          action.payload,
+          ...state.pagos.filter((pg) => pg.prestamoId === action.payload).map((pg) => pg.id),
+        ]),
       }
-    case 'ADD_PAGO':
-      return { ...state, pagos: [...state.pagos, action.payload] }
+    case 'ADD_PAGO': {
+      const pg = action.payload
+      const monto = parseFloat(pg.monto || 0)
+      const prestamo = state.prestamos.find((p) => p.id === pg.prestamoId)
+      const cliente = state.clientes.find((c) => c.id === pg.clienteId)
+      // Cada abono se reparte proporcionalmente entre capital e interés
+      let capital = monto
+      if (prestamo) {
+        const total = calcularTotalAPagar(prestamo.monto, prestamo.interes, prestamo.cuotas, prestamo.tipoInteres)
+        if (total > 0) capital = monto * (parseFloat(prestamo.monto) / total)
+      }
+      return {
+        ...state,
+        pagos: [...state.pagos, pg],
+        caja: addMovimiento(state.caja, {
+          tipo: 'entrada',
+          monto,
+          capital,
+          interes: monto - capital,
+          concepto: `Abono · ${cliente?.nombre || ''}`,
+          fecha: pg.fecha,
+          refId: pg.id,
+        }),
+      }
+    }
     case 'DELETE_PAGO':
       return {
         ...state,
         pagos: state.pagos.filter((pg) => pg.id !== action.payload),
+        caja: removeMovimientos(state.caja, [action.payload]),
       }
+    case 'ADD_MOVIMIENTO_CAJA':
+      return { ...state, caja: addMovimiento(state.caja, action.payload) }
+    case 'DELETE_MOVIMIENTO_CAJA':
+      return {
+        ...state,
+        caja: {
+          ...getCaja(state.caja),
+          movimientos: getCaja(state.caja).movimientos.filter((m) => m.id !== action.payload),
+        },
+      }
+    case 'RESET_CAJA':
+      return { ...state, caja: { inicio: new Date().toISOString(), movimientos: [] } }
     case 'UPDATE_CONFIG':
       return { ...state, config: { ...state.config, ...action.payload } }
     case 'LOAD_DATA':
@@ -72,6 +130,7 @@ function reducer(state, action) {
         clientes: demo.clientes,
         prestamos: demo.prestamos,
         pagos: demo.pagos,
+        caja: { inicio: new Date().toISOString(), movimientos: [] },
         config: { ...state.config, datosInicializados: true },
       }
     }
@@ -81,11 +140,32 @@ function reducer(state, action) {
         clientes: [],
         prestamos: [],
         pagos: [],
+        caja: { inicio: new Date().toISOString(), movimientos: [] },
         config: { ...state.config, datosInicializados: true },
       }
     default:
       return state
   }
+}
+
+function getCaja(caja) {
+  return caja && Array.isArray(caja.movimientos) ? caja : { inicio: null, movimientos: [] }
+}
+
+function addMovimiento(caja, mov) {
+  const c = getCaja(caja)
+  return {
+    ...c,
+    movimientos: [
+      ...c.movimientos,
+      { id: `m${Date.now()}${Math.floor(Math.random() * 1000)}`, creadoEn: new Date().toISOString(), ...mov },
+    ],
+  }
+}
+
+function removeMovimientos(caja, refIds) {
+  const c = getCaja(caja)
+  return { ...c, movimientos: c.movimientos.filter((m) => !m.refId || !refIds.includes(m.refId)) }
 }
 
 const AppContext = createContext(null)
@@ -119,13 +199,14 @@ export function AppProvider({ children }) {
         clientes: state.clientes,
         prestamos: state.prestamos,
         pagos: state.pagos,
+        caja: state.caja,
         config: state.config,
       }
       localStorage.setItem(STORAGE_KEY, JSON.stringify(toSave))
     } catch (e) {
       // ignore
     }
-  }, [state.clientes, state.prestamos, state.pagos, state.config])
+  }, [state.clientes, state.prestamos, state.pagos, state.caja, state.config])
 
   return (
     <AppContext.Provider value={{ state, dispatch }}>
