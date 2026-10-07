@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atrapa Clientes — Deje de perder ventas de trailers</title>
+<meta name="description" content="Atrapa Clientes recibe, califica y da seguimiento a cada persona que pregunta por un trailer, hasta que visita su lote o compra.">
+<style>
+  :root{--bg:#0b1220;--card:#121a2e;--ink:#f3f6fb;--mute:#9fb0cc;--accent:#ffb400;--accent-ink:#1a1300;--line:#223052}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+  section{padding:56px 0}
+  h1{font-size:clamp(2rem,6vw,3.4rem);line-height:1.1;margin:0 0 16px}
+  h2{font-size:clamp(1.5rem,4vw,2.2rem);margin:0 0 24px}
+  p{margin:0 0 14px;color:var(--mute)}
+  .lead{font-size:1.15rem;color:var(--ink)}
+  .btn{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:800;padding:16px 28px;border-radius:12px;text-decoration:none;border:0;font-size:1.05rem;cursor:pointer}
+  .btn:hover{filter:brightness(1.08)}
+  .top{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
+  .logo{font-weight:900;font-size:1.2rem}.logo span{color:var(--accent)}
+  .grid{display:grid;gap:16px}
+  .g3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+  .card h3{margin:0 0 8px;font-size:1.1rem}
+  .num{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--accent);color:var(--accent-ink);font-weight:900;margin-bottom:10px}
+  .video{aspect-ratio:16/9;background:var(--card);border:2px dashed var(--line);border-radius:16px;display:grid;place-items:center;text-align:center;padding:16px;color:var(--mute)}
+  .video iframe,.video video{width:100%;height:100%;border:0;border-radius:14px}
+  details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:10px}
+  summary{cursor:pointer;font-weight:700}
+  details p{margin:10px 0 0}
+  form{display:grid;gap:12px;max-width:560px}
+  label{font-size:.9rem;color:var(--mute)}
+  input,select{width:100%;padding:14px;border-radius:10px;border:1px solid var(--line);background:#0e1628;color:var(--ink);font-size:1rem}
+  input:focus,select:focus{outline:2px solid var(--accent)}
+  .check{display:flex;gap:10px;align-items:flex-start;font-size:.85rem;color:var(--mute)}
+  .check input{width:auto;margin-top:4px}
+  .note{font-size:.8rem;color:var(--mute)}
+  .ok{display:none;background:#10311f;border:1px solid #1f6b3f;color:#bff1d2;padding:16px;border-radius:12px}
+  .mark{background:#2a2000;border:1px dashed var(--accent);color:var(--accent);padding:2px 6px;border-radius:6px;font-size:.85em}
+  footer{padding:32px 0;border-top:1px solid var(--line);font-size:.85rem;color:var(--mute)}
+</style>
+</head>
+<body>
+
+<header class="wrap top">
+  <div class="logo">ATRAPA<span>CLIENTES</span></div>
+  <a class="btn" href="#demo">Quiero mi demo</a>
+</header>
+
+<!-- 1. HERO -->
+<section class="wrap" style="padding-top:32px">
+  <h1>Deje de perder los clientes que <span style="color:var(--accent)">usted ya pagó por conseguir.</span></h1>
+  <p class="lead">Atrapa Clientes recibe a cada persona que pregunta por un trailer, le contesta en menos de un minuto y le da seguimiento hasta que visita su lote o compra.</p>
+  <p><a class="btn" href="#demo">Agende su demo de 10 minutos</a></p>
+  <p class="note">Hecho por gente que vende trailers, para gente que vende trailers.</p>
+</section>
+
+<!-- 2. PROBLEMA -->
+<section class="wrap">
+  <h2>¿Le suena familiar?</h2>
+  <div class="grid g3">
+    <div class="card"><h3>Preguntan y nadie contesta</h3><p>Un domingo en la noche alguien pregunta por un trailer. Su vendedor está ocupado o dormido. El cliente le escribe al siguiente dealer.</p></div>
+    <div class="card"><h3>“Lo voy a pensar”… y se acabó</h3><p>El cliente se fue con la duda y nadie lo volvió a llamar. Esa venta se enfrió sola.</p></div>
+    <div class="card"><h3>No sabe qué anuncio funciona</h3><p>Paga Marketplace, Facebook, letreros y referidos, pero no sabe cuáles le traen clientes de verdad.</p></div>
+  </div>
+</section>
+
+<!-- 3. CÓMO FUNCIONA -->
+<section class="wrap">
+  <h2>Así atrapamos al cliente</h2>
+  <div class="grid g3">
+    <div class="card"><div class="num">1</div><h3>Un solo link o QR</h3><p>Todo el que pregunta, venga de donde venga, cae en un mismo lugar.</p></div>
+    <div class="card"><div class="num">2</div><h3>Respuesta en menos de 1 minuto</h3><p>Con el trailer que pidió, a cualquier hora, todos los días.</p></div>
+    <div class="card"><div class="num">3</div><h3>Calificamos al comprador</h3><p>Uso, presupuesto, contado o financiado, y cuándo lo necesita.</p></div>
+    <div class="card"><div class="num">4</div><h3>Seguimiento automático</h3><p>Recordatorios hasta que compre, agende o diga que no. Su vendedor solo habla con los listos.</p></div>
+  </div>
+</section>
+
+<!-- 4. QUÉ INCLUYE -->
+<section class="wrap">
+  <h2>Todo de punta a punta</h2>
+  <div class="grid g3">
+    <div class="card"><h3>Captación</h3><p>Link, QR y botón para WhatsApp, redes, web y letrero del lote.</p></div>
+    <div class="card"><h3>Respuesta inmediata</h3><p>Mensaje automático personalizado por trailer.</p></div>
+    <div class="card"><h3>Calificación</h3><p>Preguntas cortas para separar curiosos de compradores.</p></div>
+    <div class="card"><h3>Seguimiento</h3><p>WhatsApp, SMS y correo hasta cerrar.</p></div>
+    <div class="card"><h3>Tablero de ventas</h3><p>Cuántos entraron, cuántos visitaron, cuántos compraron y de dónde vinieron.</p></div>
+    <div class="card"><h3>Instalación hecha por nosotros</h3><p>Usted no aprende nada nuevo: lo dejamos funcionando.</p></div>
+  </div>
+</section>
+
+<!-- 5. VIDEO -->
+<section class="wrap">
+  <h2>Véalo en 90 segundos</h2>
+  <div class="video">
+    <div>
+      <strong>Aquí va su video</strong><br>
+      Reemplace este bloque por:<br>
+      <code>&lt;iframe src="https://www.youtube.com/embed/ID_DEL_VIDEO" allowfullscreen&gt;&lt;/iframe&gt;</code>
+    </div>
+  </div>
+</section>
+
+<!-- 6. PRUEBA -->
+<section class="wrap">
+  <h2>Lo usamos para vender nuestros propios trailers</h2>
+  <div class="card">
+    <p><span class="mark">COMPLETAR</span> Pongan aquí SOLO resultados reales y demostrables (ej.: tiempo de respuesta antes/después, citas agendadas, ventas recuperadas) o un testimonio real con permiso de quien lo da.</p>
+    <p>Si todavía no hay cifras, borren esta sección y dejen la demo como prueba: <strong>“Llene el formulario de abajo y vea cómo le respondemos.”</strong></p>
+  </div>
+</section>
+
+<!-- 7. OFERTA -->
+<section class="wrap">
+  <h2>Empiece con poco riesgo</h2>
+  <div class="grid g3">
+    <div class="card"><h3>Piloto de 30 días</h3><p>Con un solo tipo de trailer. <span class="mark">PRECIO</span></p></div>
+    <div class="card"><h3>Instalación completa</h3><p>Configuración + acompañamiento. <span class="mark">PRECIO</span></p></div>
+    <div class="card"><h3>Mensualidad</h3><p>Sistema, seguimiento y tablero. <span class="mark">PRECIO/MES</span></p></div>
+  </div>
+  <p style="margin-top:16px"><span class="mark">GARANTÍA</span> Escriban solo una garantía medible que puedan cumplir.</p>
+</section>
+
+<!-- 8. FAQ -->
+<section class="wrap">
+  <h2>Preguntas frecuentes</h2>
+  <details><summary>Ya tengo un CRM, ¿me sirve?</summary><p>Sí. No lo reemplazamos: Atrapa Clientes atrapa y califica al cliente antes de que llegue a su CRM.</p></details>
+  <details><summary>¿Tengo que aprender un sistema nuevo?</summary><p>No. Lo instalamos nosotros y su equipo solo atiende a los clientes que ya vienen listos.</p></details>
+  <details><summary>¿Funciona para mi tipo de trailer?</summary><p>Sí: carga, utilitarios, equipo, dump, gooseneck, camper y más. Se configura con su inventario.</p></details>
+  <details><summary>¿Y los mensajes automáticos, son legales?</summary><p>Trabajamos con permiso del cliente (opt-in) y opción de salir con “STOP”, como piden las reglas de WhatsApp/SMS.</p></details>
+  <details><summary>¿Cuánto tarda la instalación?</summary><p><span class="mark">X días</span> — completar con su plazo real.</p></details>
+</section>
+
+<!-- 9. FORMULARIO (debe ser su propio Atrapa Clientes) -->
+<section class="wrap" id="demo">
+  <h2>Pida su demo y vea cómo le respondemos</h2>
+  <p>Llene esto y mire con sus propios ojos lo que siente un cliente atrapado.</p>
+  <form id="lead" novalidate>
+    <div><label for="nombre">Su nombre</label><input id="nombre" name="nombre" autocomplete="name" required></div>
+    <div><label for="tel">Teléfono / WhatsApp</label><input id="tel" name="tel" type="tel" autocomplete="tel" required></div>
+    <div><label for="empresa">Nombre de su compañía</label><input id="empresa" name="empresa" autocomplete="organization"></div>
+    <div><label for="tipo">¿Qué trailers vende?</label>
+      <select id="tipo" name="tipo">
+        <option>Carga / utilitarios</option><option>Equipo / dump / gooseneck</option>
+        <option>Camper / recreativos</option><option>Varios tipos</option>
+      </select></div>
+    <div><label for="vol">¿Cuántas personas le preguntan al mes?</label>
+      <select id="vol" name="vol">
+        <option>Menos de 20</option><option>20 a 50</option><option>50 a 150</option><option>Más de 150</option>
+      </select></div>
+    <label class="check"><input type="checkbox" id="optin" required>
+      <span>Acepto que me contacten por WhatsApp, SMS, llamada o correo sobre esta demo. Puedo escribir STOP para dejar de recibir mensajes.</span></label>
+    <button class="btn" type="submit">Quiero atrapar más clientes</button>
+    <p class="note">No vendemos ni compartimos sus datos.</p>
+  </form>
+  <div class="ok" id="ok" role="status">¡Listo! Recibimos sus datos. En un momento le escribimos por WhatsApp.</div>
+</section>
+
+<footer class="wrap">© Atrapa Clientes · <span class="mark">COMPLETAR</span> datos de contacto, política de privacidad y términos</footer>
+
+<script>
+  // === CONECTAR AL SISTEMA REAL ===
+  // Reemplace ENDPOINT por su webhook (n8n, GoHighLevel, Zapier, etc.).
+  // Mientras esté vacío, el formulario solo muestra el mensaje de éxito y NO guarda nada.
+  var ENDPOINT = "";
+
+  document.getElementById("lead").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var f = e.target;
+    if (!f.nombre.value.trim() || !f.tel.value.trim() || !f.optin.checked) {
+      alert("Escriba su nombre, teléfono y acepte el permiso de contacto.");
+      return;
+    }
+    var data = {
+      nombre: f.nombre.value.trim(), tel: f.tel.value.trim(), empresa: f.empresa.value.trim(),
+      tipo: f.tipo.value, volumen: f.vol.value, optin: true, origen: location.href,
+      fecha: new Date().toISOString()
+    };
+    function done() { f.style.display = "none"; document.getElementById("ok").style.display = "block"; }
+    if (!ENDPOINT) { console.warn("ENDPOINT vacío: lead NO guardado", data); return done(); }
+    fetch(ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); done(); })
+      .catch(function () { alert("No pudimos enviar sus datos. Intente de nuevo o escríbanos por WhatsApp."); });
+  });
+</script>
+</body>
+</html>
