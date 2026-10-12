@@ -11,7 +11,6 @@ Sistema de ventas automatizado que atiende y califica clientes por WhatsApp las 
 - Agentes de IA:
   - Jack: TraiMax (trailers)
   - Luis: reparación de crédito
-  - María / Ethan: bienes raíces
 
 ## Cómo trabajamos
 - El usuario construye y prueba el sistema con Claude; después convierte lo hecho en material del curso.
