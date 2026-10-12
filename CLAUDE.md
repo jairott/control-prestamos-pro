@@ -9,7 +9,7 @@ Sistema de ventas automatizado que atiende y califica clientes por WhatsApp las 
 - Meta Ads (anuncios que abren directo en WhatsApp)
 - Supabase (base de datos y memoria)
 - Agentes de IA:
-  - Jack: TraiMax (trailers)
+  - Jack: TraiMax (trailers). Se presenta al cliente como "Jairo Torres". Workflow principal en n8n: "Jack - TraiMax Redis (CLIENTES NUEVOS)" (id zMYJcloAwwbIRrEc), el que usamos con más frecuencia. El flujo "Jairo - TraiMax WhatsApp GHL" (id 7LrqZC313XsBiDAB) es la versión anterior.
   - Luis: reparación de crédito
 
 ## Cómo trabajamos
