@@ -17,3 +17,11 @@ Sistema de ventas automatizado que atiende y califica clientes por WhatsApp las 
 - Documentar cada paso de lo que se hace, para poder explicarlo en el curso.
 - Antes de cambiar algo en producción (n8n, GHL, Meta Ads): explicar qué se va a hacer y esperar confirmación del usuario.
 - Responder siempre en español.
+
+## Redes sociales TraiMax (orgánico)
+- Herramienta: Metricool (blogId 7270818, zona America/Chicago). Abency descartado (prueba vencida, de pago).
+- Facebook: página TraiMax (id 1217389801446914). Instagram: @jairotorrestalavera (confirmado por Jairo para TraiMax).
+- Meta: 2 posts diarios de trailers distintos. Jairo pasa las fotos; Claude escribe el texto y deja borrador para aprobación.
+- Textos en español, sin precio. Fotos en Google Drive: carpeta "TraiMax - Fotos Redes." (id 1_fyT7bzeNyW9Eo9Ya5Xyc_D0rqQ7xrGp, enlace público como lector).
+- Las fotos HEIC fallan en Metricool desde enlace de Drive: usar JPG o subir directo en el editor.
+- La interfaz de Metricool muestra la hora en zona de Madrid; el post de las 10:00 de Odessa se ve como 17:00.
