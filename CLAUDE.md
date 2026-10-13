@@ -25,3 +25,5 @@ Sistema de ventas automatizado que atiende y califica clientes por WhatsApp las 
 - Textos en español, sin precio. Fotos en Google Drive: carpeta "TraiMax - Fotos Redes." (id 1_fyT7bzeNyW9Eo9Ya5Xyc_D0rqQ7xrGp, enlace público como lector).
 - Las fotos HEIC fallan en Metricool desde enlace de Drive: usar JPG o subir directo en el editor.
 - La interfaz de Metricool muestra la hora en zona de Madrid; el post de las 10:00 de Odessa se ve como 17:00.
+- FLUJO QUE FUNCIONA (13-oct): Claude hace el creativo (JPG 1080x1350 con PIL), lo sube a fotos-redes/ en el repo (público) y pasa la URL raw.githubusercontent.com a Metricool, que la importa sola. Drive y HEIC NO funcionan en Metricool.
+- Oferta aprobada por Jairo en los posts: "Llévatela sin checar crédito*" con "*Aplican condiciones". Número de Jack para WhatsApp: (432) 577-0644. Capacidad dump 14TD: 14,000 lb (confirmado por Jairo).
