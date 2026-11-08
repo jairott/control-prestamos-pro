@@ -1,99 +1,88 @@
-# ControlPréstamos Pro — Calendario de contenido (30 días)
+# ControlPréstamos Pro — Calendario 30 días (mundo trailero)
 
-**Producto:** app web instalable (PWA) para llevar clientes, préstamos, pagos, reportes y respaldo. Acceso con PIN de 4 dígitos. Moneda C$ / USD. Frecuencias diaria, semanal, quincenal y mensual.
-**Público:** prestamistas independientes y pequeños negocios de crédito (Nicaragua / Centroamérica) que hoy llevan todo en cuaderno, WhatsApp o Excel.
-**Tono:** cercano, práctico, "ordena tu cobro". Sin prometer ganancias.
-**Plataformas:** Facebook + Instagram + TikTok/Reels + estados de WhatsApp (mismo contenido adaptado).
-**Ritmo:** 1 pieza al día. Reel = video 15–40 s. Carrusel = 5–7 láminas. Post = imagen única. Story = historia de 1–3 láminas.
-
-> Usa SIEMPRE datos demo en pantalla, nunca clientes reales.
+**Producto:** app instalable (PWA) para llevar clientes, préstamos, pagos, reportes y respaldo. PIN de 4 dígitos. C$ / USD. Pagos diarios, semanales, quincenales o mensuales.
+**Público (supuesto, confirmar):** quien presta o da adelantos a traileros y transportistas de carga: prestamistas, dueños de trailas con choferes, financieras pequeñas.
+**Dolor central:** el trailero anda en ruta días o semanas, las cuotas se atrasan o se pagan por partes, y todo está en cuaderno o WhatsApp.
+**Tono:** de carretera, directo, respetuoso. Sin prometer ganancias. Datos demo siempre, nunca clientes reales.
+**Formatos:** Reel 15–40 s · Carrusel 5–7 láminas · Post · Story.
 
 ---
 
-## Semana 1 — "El problema": el cuaderno ya no alcanza
+## Semana 1 — El problema: la ruta no perdona el cuaderno
 
-| Día | Formato | Tema / gancho | Contenido | CTA |
-|---|---|---|---|---|
-| 1 | Reel | "¿Cuántos clientes te deben y no sabes cuánto?" | Cuaderno manchado, hojas rotas. Cierra con el Dashboard: total prestado / cobrado / pendiente | "Sígueme, esta semana te enseño a ordenarte" |
-| 2 | Carrusel | 5 errores de quien presta con cuaderno | 1) olvidar una cuota 2) no saber el saldo 3) perder el cuaderno 4) intereses mal calculados 5) no saber quién está vencido | "Guarda este post" |
-| 3 | Post | "Prestar sin registro es regalar tu dinero" | Frase + logo | Comparte con un colega |
-| 4 | Reel | Tour de 20 s de la app | Inicio → Clientes → Préstamos → Pagos → Más | "Escríbeme DEMO" |
-| 5 | Story | Encuesta: "¿Cómo llevas tus cobros hoy?" Cuaderno / Excel / WhatsApp / App | Sticker de encuesta | Responde |
-| 6 | Reel | Antes vs después: cuaderno vs app | Pantalla dividida | "Prueba la demo" |
-| 7 | Post | Resumen semanal + resultados de la encuesta | Números reales de votos | "¿Quieres ver cómo funciona?" |
+| Día | Formato | Tema / gancho | CTA |
+|---|---|---|---|
+| 1 | Reel | "Tu trailero salió a Honduras y no sabes cuánto te debe" → Dashboard con total prestado / cobrado / pendiente | Sígueme |
+| 2 | Carrusel | 5 errores al prestarle a traileros: cuota olvidada, abonos sin anotar, saldo de memoria, cuaderno perdido, no saber quién está vencido | Guarda el post |
+| 3 | Post | "Una traila parada no paga cuotas, pero un registro claro sí te protege" | Comparte |
+| 4 | Reel | Tour de 20 s: Inicio → Clientes → Préstamos → Pagos → Más | Escríbeme DEMO |
+| 5 | Story | Encuesta: "¿Cómo llevas el cobro a tus traileros?" Cuaderno / Excel / WhatsApp / App | Vota |
+| 6 | Reel | Antes vs después: cuaderno en la cabina vs app en el celular | Prueba la demo |
+| 7 | Post | Resultado de la encuesta + resumen semanal | ¿Te muestro cómo? |
 
-## Semana 2 — "Cómo se usa": paso a paso
+## Semana 2 — Paso a paso
 
 | Día | Formato | Tema | Qué mostrar |
 |---|---|---|---|
-| 8 | Reel | Registrar un cliente en 30 segundos | Clientes → + (datos demo) |
-| 9 | Reel | Crear un préstamo y ver la cuota calculada | Monto, interés, cuotas, frecuencia; total a pagar y fecha de vencimiento |
-| 10 | Carrusel | Diario, semanal, quincenal o mensual: ¿cuál te conviene? | Las 4 frecuencias con un ejemplo |
-| 11 | Reel | Registrar un pago | Pagos → +, cómo baja el saldo |
-| 12 | Post | Captura del detalle del préstamo con historial | Anotaciones sobre la captura |
-| 13 | Reel | "Mi cliente dice que ya pagó": búscalo en 5 segundos | Historial de pagos del cliente |
-| 14 | Story | Caja de preguntas | Responde en la semana siguiente |
+| 8 | Reel | Registrar a un trailero en 30 s (nombre, teléfono, datos de ruta/placa si los usas en notas) | Clientes → + |
+| 9 | Reel | Préstamo para repuestos / llantas / combustible: cuota calculada | Monto, interés, cuotas, frecuencia, fecha de vencimiento |
+| 10 | Carrusel | Pago semanal, quincenal o por viaje: ¿cuál le conviene a un trailero? | Las 4 frecuencias con ejemplo |
+| 11 | Reel | Registrar un abono parcial cuando llega de ruta | Pagos → +, baja el saldo |
+| 12 | Post | Captura del historial de un préstamo | Anotada |
+| 13 | Reel | "Yo ya te pagué en Managua": búscalo en 5 segundos | Historial de pagos |
+| 14 | Story | Caja de preguntas | Responder la semana siguiente |
 
-## Semana 3 — "Control y tranquilidad"
-
-| Día | Formato | Tema | Notas |
-|---|---|---|---|
-| 15 | Reel | Préstamos vencidos: detéctalos de un vistazo | Tarjeta roja del Dashboard |
-| 16 | Carrusel | Cómo dar seguimiento a la morosidad sin pelear | Recordatorio amable, acuerdo de pago, registrar todo |
-| 17 | Reel | Reportes: lo cobrado hoy, esta semana, este mes | Filtros Hoy / Semana / Mes / Todo |
-| 18 | Reel | Exportar reporte (CSV) | Grábalo solo después de verificar que funciona como lo explicas |
-| 19 | Post | "Tu información protegida con PIN" | Pantalla de login. No uses "encriptado" si no lo es |
-| 20 | Reel | Respaldo: exporta tus datos en 1 clic | Más → Respaldo; explica dónde se guardan los datos |
-| 21 | Story | Lo mejor de la semana + sticker "Quiero la demo" | Medir clics |
-
-## Semana 4 — "Confianza y cierre"
+## Semana 3 — Control
 
 | Día | Formato | Tema | Notas |
 |---|---|---|---|
-| 22 | Reel | Instálala como app en tu celular (Android e iPhone) | "Añadir a pantalla de inicio" |
-| 23 | Carrusel | Preguntas frecuentes: ¿cuesta?, ¿necesito internet?, ¿dónde están mis datos? | Responder solo con lo verificado |
-| 24 | Reel | Testimonio real, con permiso | Si no hay, sustituir por "caso de ejemplo" rotulado como ejemplo |
-| 25 | Post | "¿Cuánto pagaría por C$5,000 al 10%?" | Valida el cálculo en la app antes de publicar |
-| 26 | Reel | "Un día usando ControlPréstamos" | Mañana: cobros del día; noche: reporte |
-| 27 | Carrusel | Mitos del prestamista informal | Educativo, genera compartidos |
-| 28 | Story | Cuenta regresiva a la oferta de lanzamiento | Solo si defines una oferta |
-| 29 | Reel | Oferta / prueba gratis / demo guiada | Requiere precio y enlace |
-| 30 | Post + Story | Recapitulación + agradecimiento + siguiente paso | CTA principal: WhatsApp |
+| 15 | Reel | Vencidos de un vistazo, aunque el trailero siga en ruta | Tarjeta roja del Dashboard |
+| 16 | Carrusel | Cómo cobrar a quien anda en carretera sin pelear: mensaje amable, acuerdo al regreso, registrar todo | Consejos |
+| 17 | Reel | Reporte de cobros de hoy / semana / mes | Filtros de Reportes |
+| 18 | Reel | Exportar reporte (CSV) | Grabar solo tras verificar que funciona |
+| 19 | Post | "Tu cartera con PIN" | No decir "encriptado" si no lo es |
+| 20 | Reel | Respaldo en 1 clic: si se te pierde el celular en ruta, no pierdes la cartera | Más → Respaldo; aclarar dónde se guardan los datos |
+| 21 | Story | Lo mejor de la semana + "Quiero la demo" | Medir clics |
+
+## Semana 4 — Confianza y cierre
+
+| Día | Formato | Tema | Notas |
+|---|---|---|---|
+| 22 | Reel | Instálala en tu celular (Android / iPhone) | Añadir a pantalla de inicio |
+| 23 | Carrusel | Preguntas frecuentes: precio, internet (¿sirve en carretera con mala señal?), dónde están mis datos | Solo respuestas verificadas |
+| 24 | Reel | Testimonio real con permiso | Si no hay, "caso de ejemplo" rotulado |
+| 25 | Post | "¿Cuánto cuesta un préstamo de C$20,000 al 10%?" | Validar el cálculo antes |
+| 26 | Reel | Un día de un prestamista de traileros | Cobros del día / reporte |
+| 27 | Carrusel | Mitos del préstamo informal | Educativo |
+| 28 | Story | Cuenta regresiva de oferta | Solo si hay oferta |
+| 29 | Reel | Oferta / demo guiada | Requiere precio y enlace |
+| 30 | Post + Story | Recapitulación + agradecimiento | WhatsApp |
 
 ---
 
 ## Banco de textos
-
-**Gancho Reel 1:** "Si tu cuaderno de cobros se moja, ¿cuánto dinero pierdes? 😬"
-**Caption base:** "Lleva clientes, préstamos y pagos en un solo lugar. Cuotas calculadas, vencidos a la vista y respaldo de tu información. Escríbeme DEMO por WhatsApp 👇"
-**Hashtags:** #prestamos #finanzasnicaragua #emprendedoresnicaragua #controlfinanciero #microcreditos #negociospropios
-**Respuesta a "¿cuánto cuesta?":** "[tu precio]. Escríbeme y te muestro una demo gratis."
+**Gancho Reel 1:** "Tu trailero sale a ruta… ¿y tú sabes cuánto te debe? 🚛"
+**Caption base:** "Clientes, préstamos y abonos en un solo lugar. Cuotas calculadas, vencidos a la vista y respaldo. Escríbeme DEMO por WhatsApp 👇"
+**Hashtags:** #traileros #transportistas #trailas #prestamos #nicaragua #centroamerica #controlfinanciero
 
 ---
 
 ## Lo que me falta de tu parte
-
 **Bloqueantes**
-1. **Precio / modelo de venta** (gratis, pago único, mensualidad). Sin esto no se cierran los días 23, 28 y 29.
-2. **URL de la app publicada y número de WhatsApp** para el CTA. El repo no tiene dominio ni contacto.
-3. **Identidad de marca:** logo final, colores, nombre de cuenta. Hoy solo hay el ícono por defecto y el azul `#1e40af`.
-4. **País y público confirmados.** Asumí Nicaragua por la moneda C$.
+1. Confirmar el público: ¿prestamistas a traileros, dueños de trailas o traileros mismos?
+2. Precio o modelo de venta (días 23, 28, 29).
+3. URL de la app y número de WhatsApp (el repo no tiene ninguno).
+4. Logo, colores y nombre de cuenta.
+5. País y redes que usas (¿programo en Metricool?).
 
-**Verificaciones del producto (para no prometer algo falso)**
-5. **¿Funciona sin internet?** Tiene service worker (PWA), pero pruébalo en tu celular antes de decirlo.
-6. **¿Dónde se guardan los datos?** Si es solo en el teléfono, hay que decirlo y reforzar el respaldo; cambia el mensaje de seguridad de los días 19–23.
-7. **Recibos / WhatsApp / CSV:** el código los menciona; confirma cuáles están completos antes de grabar los días 18 y 20.
-8. **Cálculo de intereses** (`src/utils/calculations.js`): el interés "fijo" no depende del número de cuotas y el "mensual" suma interés × cuotas sin considerar la frecuencia. Valida con un caso real antes de enseñarlo en los días 9 y 25; si el resultado no es el esperado, hay que corregirlo primero.
+**Verificar en el producto**
+6. Si funciona sin internet (clave para carretera): pruébalo en el celular.
+7. Dónde se guardan los datos; cambia el mensaje de seguridad.
+8. Qué hay completo en CSV / recibos / WhatsApp.
+9. Cálculo de intereses (`src/utils/calculations.js`): el "fijo" no depende del número de cuotas y el "mensual" suma interés × cuotas sin considerar la frecuencia. Validar con un caso real antes de los días 9 y 25.
 
-**Material que solo tú puedes producir**
-9. **~11 grabaciones de pantalla** (días 1, 4, 8, 9, 11, 13, 15, 17, 20, 22, 26) con datos demo (`src/utils/demoData.js`).
-10. **Decidir si saldrás en cámara** o si los reels serán pantalla + texto + música.
-11. **Un testimonio real** con permiso (día 24), o avísame y lo reemplazo.
-12. **Qué redes usas** y si quieres que programe todo en Metricool (hay conector disponible).
-
-**Aviso:** verifica si en tu país necesitas mencionar licencias o regulación de microfinanzas. No incluí promesas de rentabilidad.
-
----
-
-## Siguiente paso
-Respóndeme 1–4 y dime qué redes usas. Con eso te entrego los 30 copys completos, guiones de reels y los diseños de carruseles en Canva.
+**Material tuyo**
+10. ~11 grabaciones de pantalla con datos demo (días 1, 4, 8, 9, 11, 13, 15, 17, 20, 22, 26).
+11. Decidir si sales en cámara.
+12. Un testimonio real con permiso (día 24).
+13. Fotos o clips de trailas propios o con licencia, para no usar imágenes ajenas.
